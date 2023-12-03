@@ -19,6 +19,7 @@ namespace MiddlewareExample.CustomMiddleware
             await httpContext.Response.WriteAsync("Rodolfo\n");
 
             //return _next(httpContext);
+            await _next(httpContext);
         }
     }
 
