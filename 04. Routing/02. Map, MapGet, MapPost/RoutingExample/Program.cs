@@ -7,8 +7,12 @@ app.UseRouting();
 //creating endpoints
 app.UseEndpoints(endpoints =>
 {
-  //add your endpoints here
-  endpoints.MapGet("map1", async (context) => {
+    endpoints.Map("map", async (context) => {
+        await context.Response.WriteAsync("In Map test");
+    });
+
+    //add your endpoints here
+    endpoints.MapGet("map1", async (context) => {
     await context.Response.WriteAsync("In Map 1");
   });
 
