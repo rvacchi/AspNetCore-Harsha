@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="myroot\img1.jpg" />
     <Content Include="mywebroot\docs.pdf" />
-    <Content Include="myroot\Sample.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Include="wwwroot\img1.jpg" />
+    <None Include="wwwroot\Sample.txt" />
   </ItemGroup>
 
 </Project>

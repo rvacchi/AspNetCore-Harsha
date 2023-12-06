@@ -6,7 +6,9 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions() {
 var app = builder.Build();
 
 app.UseStaticFiles(); //works with the web root path (myroot)
-app.UseStaticFiles(new StaticFileOptions()
+
+
+app.UseStaticFiles(new StaticFileOptions() //works wit (mywebroot folder)
 {
  FileProvider = new PhysicalFileProvider(
  Path.Combine(builder.Environment.ContentRootPath, "mywebroot")
