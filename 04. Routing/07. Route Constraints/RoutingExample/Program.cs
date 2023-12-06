@@ -69,6 +69,7 @@ app.UseEndpoints(endpoints =>
  });
 });
 
+//se tiver algum erro acima e pego aqui
 app.Run(async context => {
   await context.Response.WriteAsync($"No route matched at {context.Request.Path}");
 });
